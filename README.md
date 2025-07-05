@@ -1,32 +1,41 @@
-# Unix-Like Shell
+# Custom Unix-Like Shell
 
-A custom-built command-line shell written in **Python**, emulating key Unix shell features such as I/O redirection, piping, and command substitution. This project was developed as part of the **Software Engineering** module at University College London (UCL).
+A modular, extensible command-line shell written in **Python**, supporting a wide range of Unix-style features. Developed in a team of three as part of the **COMP0010: Software Engineering** module at University College London (UCL), this project demonstrates modern design principles, test-driven development, and custom grammar parsing.
 
-## Features
+## 🚀 Features
 
-- **Command execution** for built-in and external commands
-- **I/O redirection** (input `<`, output `>`, append `>>`)
-- **Piping** between commands (`|`)
+- **Command execution** for built-in and user-defined applications
+- **I/O redirection**: input `<`, output `>`, append `>>`
+- **Piping**: chaining commands with the `|` operator
 - **Command substitution** using backticks (`` `command` ``)
-- **Custom shell commands** including `cut`, `uniq`, `echo`, `wc`, `clear`, and `exit`
-- **ANTLR-based grammar parsing** for structured command interpretation
-- **Robust error handling** and unit testing for correctness
+- **Custom shell commands**: `cut`, `uniq`, `sort`, `find`, `wc`, `clear`, `exit`, and unsafe variants of all applications
+- **ANTLR-based grammar parsing** with a modular parse tree visitor architecture
+- **Design patterns**: Command and Visitor patterns for extensibility and separation of concerns
+- **Robust error handling** with custom exception types
+- **High unit test coverage** across core features and commands
+- **Structured, testable architecture** following software engineering best practices
 
-## Technologies Used
+## 🧪 Development Practices
 
-- **Python** for all implementation
-- **ANTLR** for grammar definition and parse tree generation
-- **Design patterns**: Command and Visitor patterns for modular and extensible architecture
-- **Unit testing** to ensure reliability and maintainability
+- Modular and extensible design using OOP and design patterns
+- Unit testing to validate command logic and shell behavior
+- Static analysis and peer-reviewed code for maintainability
+- Cleanly separated grammar, parsing, and execution layers
 
-## Context
+## 📁 Repository Structure
 
-This project was completed in a team of three as part of the **COMP0010: Software Engineering** module at UCL. It demonstrates systems-level problem solving, parser design, and modular architecture in Python.
+- `src/` – Shell core and command implementations
+- `antlr/` – ANTLR grammar definitions and parser setup
+- `tests/` – Unit tests for commands and features
+- `README.md` – Project overview and instructions
 
-## How to Run
+## ▶️ Running the Shell
 
-> ⚠️ Note: This project was developed in an academic setting and may require setup of **ANTLR** and specific Python dependencies. For demonstration purposes only.
+> Requires Python 3 and ANTLR. Developed for academic purposes.
 
-## License
+1. Install dependencies
+2. Generate the parser with ANTLR
+3. Run the shell:
+   ```bash
+   python3 main.py
 
-This project is for educational use only and is not intended for production environments.
