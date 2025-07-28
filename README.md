@@ -1,6 +1,6 @@
 # Custom Unix-Like Shell
 
-A modular, extensible command-line shell written in **Python**, supporting a wide range of Unix-style features. Developed in a team of three as part of the **COMP0010: Software Engineering** module at University College London (UCL), this project demonstrates modern design principles, test-driven development, and custom grammar parsing.
+A modular, extensible command-line shell written in **Python**, supporting a wide range of Unix-style features. This project demonstrates modern design principles, test-driven development and custom grammar parsing.
 
 ## 🚀 Features
 
